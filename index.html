@@ -14,10 +14,10 @@
     <header class="container mx-auto">
         <!-- Here is navbar -->
         <section>
-            <div class="navbar py-5 md:py-12 px-0 bg-base-100">
+            <div class="navbar py-5 px-4 md:py-12 sm:px-0 bg-base-100">
                 <div class="navbar-start">
                     <div class="dropdown">
-                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                    <div tabindex="0" role="button" class="btn pl-0 pr-4 btn-ghost lg:hidden">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                     </div>
                     <ul tabindex="0" class="menu font-medium menu-sm bg-white w-52 dropdown-content mt-3 z-[1] p-2 rounded-box">
@@ -27,7 +27,7 @@
                         <li><a class="text-base">Search</a></li>
                     </ul>
                     </div>
-                    <a href="#" class="text-2xl md:text-4xl font-extrabold">Online Ticket</a>
+                    <a href="#" class="text-xl md:text-4xl font-extrabold">Online Ticket</a>
                 </div>
                 <div class="navbar-center hidden lg:flex">
                     <ul class="menu menu-horizontal px-1 font-medium">
@@ -37,7 +37,7 @@
                         <li><a class="text-base">Search</a></li>
                     </ul>
                 </div>
-                <div class="navbar-end gap-12">
+                <div class="navbar-end gap-0 md:gap-12">
                     <div class="navbar-end w-auto">
                         <a class="btn btn-md text-xl font-bold text-btn-color bg-[#1DD1001A] text-green-500">Bus 
                             <img src="src/img/bus-icon.png">
@@ -48,12 +48,12 @@
         </section>
         <!-- Here is Banner Section -->
         <section>
-            <div class="hero rounded-3xl pt-24 pb-28 bg-[url(src/img/banner.png)] bg-no-repeat bg-center">
+            <div class="hero rounded-3xl pt-24 pb-16 md:pb-28 bg-[url(src/img/banner.png)] bg-no-repeat bg-center">
                 <div class="hero-content text-center text-white">
                     <div class="">
-                        <h1 class="mb-5 text-6xl font-extrabold">End-To-End Travel With</h1>
-                        <h1 class="mb-5 text-6xl font-extrabold text-[#1DD100]">Alpha Express</h1>
-                        <p class="mb-8 w-8/12 mx-auto">The journey typically begins at a bus terminal or station, bustling with activity as travelers gather to embark on their respective routes. </p>
+                        <h1 class="mb-5 text-4xl md:text-6xl font-extrabold">End-To-End Travel With</h1>
+                        <h1 class="mb-5 text-4xl md:text-6xl font-extrabold text-[#1DD100]">Alpha Express</h1>
+                        <p class="mb-8 w-full md:w-8/12 mx-auto">The journey typically begins at a bus terminal or station, bustling with activity as travelers gather to embark on their respective routes. </p>
                         <button class="btn bg-[#1DD100] font-bold text-xl border-none">Buy Tickets</button>
                     </div>
                 </div>
@@ -64,15 +64,15 @@
     <!-- _________Here is Main Section____________ -->
     <main>
         <!-- Best offers for you -->
-        <section class="py-24 container mx-auto">
+        <section class="py-16 md:py-24 container mx-auto">
             <div>
-                <h2 class="text-5xl font-bold text-center mb-16">Best offers for you</h2>
+                <h2 class="text-3xl md:text-5xl font-bold text-center mb-10 md:mb-16">Best offers for you</h2>
             </div>
             <div class="flex flex-col md:flex-row gap-10">
                 <div class="bg-[#FFBF0F] flex rounded-2xl w-10/12 mx-auto px-5">
                     <div class="w-full flex justify-center items-center flex-col">
                         <div>
-                            <h2 class="text-4xl font-black">15% OFF</h2>
+                            <h2 class="text-2xl md:text-4xl font-black">15% OFF</h2>
                             <p class="font-bold py-2 ">on your next purchase</p>
                             <p class="text-slate-700">use by January 2024</p>
                         </div>
@@ -80,7 +80,7 @@
                     <img src="src/img/cupon-devider.png">
                     <div class="w-full flex justify-center items-center flex-col">
                         <div>
-                            <h3 class="text-2xl font-bold">NEW15</h3>
+                            <h3 class="text-xl md:text-2xl font-bold">NEW15</h3>
                             <p class="text-slate-700">Coupon Code</p>
                         </div>
                     </div>
@@ -88,7 +88,7 @@
                 <div class="bg-[#F78C9C] flex rounded-2xl w-10/12 mx-auto px-5">
                     <div class="w-full flex justify-center items-center flex-col">
                         <div>
-                            <h2 class="text-4xl font-black">20% OFF</h2>
+                            <h2 class="text-2xl md:text-4xl font-black">20% OFF</h2>
                             <p class="font-bold py-2 ">on your next purchase</p>
                             <p class="text-slate-700">use by January 2024</p>
                         </div>
@@ -96,20 +96,230 @@
                     <img src="src/img/cupon-devider.png">
                     <div class="w-full flex justify-center items-center flex-col">
                         <div>
-                            <h3 class="text-2xl font-bold">Couple 20</h3>
+                            <h3 class="text-xl md:text-2xl font-bold">Couple 20</h3>
                             <p class="text-slate-700">Coupon Code</p>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="text-center mt-16">
-                <button class="btn btn-outline btn-lg btn-success text-[#1DD100] font-bold">See All Offers</button>
+                <button class="btn btn-outline btn-md xl:btn-lg btn-success text-[#1DD100] font-bold">See All Offers</button>
             </div>
         </section>
         <!-- Alpha Express section -->
-        <section class="border-t-2 rounded-3xl border-[#1DD100] py-24">
-            <div>
-                <h2 class="text-5xl font-bold text-center mb-16">Alpha Express</h2>
+        <section class="border-t-2 rounded-t-3xl border-[#1DD100] py-11 md:py-24 bg-[#F7F8F8]">
+            <div class="container mx-auto p-5">
+                <div class="text-center">
+                    <h2 class="text-3xl md:text-5xl font-bold text-center">Alpha Express</h2>
+                    <p class="w-full md:w-5/12 mx-auto mt-6 mb-9 text-slate-500 font-medium">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined.</p>
+                </div>
+                <div class="bg-[#FFFFFF] flex flex-col xl:flex-row rounded-2xl px-5 py-5 xl:py-0">
+                    <div class="w-full xl:w-8/12">
+                        <div class="flex flex-col xl:flex-row xl:p-8 p-0 justify-between">
+                            <div class="flex flex-col xl:flex-row">
+                                <div>
+                                    <img src="src/img/bus-logo.png">
+                                </div>
+                                <div>
+                                    <div class="xl:ps-5 ps-0 my-5 xl:my-0">
+                                        <h2 class="md:text-3xl text-2xl font-extrabold">Alpha Express</h2>
+                                        <p class=" text-slate-500 font-medium">Coach-009-WEB ! AC_Business</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <a class="btn btn-md text-xl text-btn-color  xl:mb-0 mb-5 bg-[#1DD1001A] text-green-500"><img src="src/img/seat-green.png"> 40 Seats left
+                                </a>
+                            </div>
+                        </div>
+                        <div class="p-5 bg-zinc-100 rounded-xl">
+                            <div class="flex justify-between border-b-2 border-dashed  border-zinc-300 pb-5">
+                                <p>Route</p>
+                                <p class="text-black font-bold">Dhaka - Sylhet</p>
+                            </div>
+                            <div class="flex justify-between border-b-2 border-dashed  border-zinc-300 py-5">
+                                <p>Departure Time</p>
+                                <p class="text-black font-bold">9:00 PM</p>
+                            </div>
+                            <div class="pt-5 flex xl:flex-row flex-col justify-between">
+                                <button class="btn bg-gray-300 xl:mb-0 mb-5">Boarding Point - Laxmipur</button>
+                                <button class="btn bg-gray-300 xl:mb-0 mb-5">Dropping Point - Bogura</button>
+                                <button class="btn bg-gray-300">Est. Time - 11 Hour</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border-b-2 border-dashed block xl:hidden border-zinc-300 my-5"></div>
+                    <div class="w-1/12 flex justify-center hidden xl:block items-center">
+                        <div>
+                            <img src="src/img/info-devider.png">
+                        </div>
+                    </div>
+                    <div class="flex justify-center items-center text-center w-full xl:w-3/12">
+                        <div>
+                            <img src="src/img/fare.png" class="mx-auto">
+                            <h2 class="md:text-4xl text-2xl font-extrabold my-3">0 Taka</h2>
+                            <p class="text-slate-700 text-2xl">Per Seat</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Seat Section -->
+        <section class="bg-[#F7F8F8] p-5">
+            <div class="container mx-auto p-5 rounded-3xl bg-[#FFFFFF]">
+                <div class="flex flex-col xl:flex-row justify-between">
+                    <div class="w-full">
+                        <h3 class="text-xl font-bold mb-4">Select Your Seat</h3>
+                        <div class="flex justify-between items-center py-3 border-y-2 border-dashed  border-zinc-300">
+                            <p class="flex"><img src="src/img/seat-gray.png"  class="pe-2"> Available</p>
+                            <p class="flex  text-[#1DD100]"><img src="src/img/seat-green-filled.png" class="pe-2"> Selected</p>
+                        </div>
+                        <div class="my-6 text-end">
+                            <button class="btn px-8"><img src="src/img/wheal.png"></button>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-5">
+                                <button class="p-3 text-gray-400 xl:text-xl text-base">A</button>
+                                <button class="btn text-gray-400 xl:text-xl text-base text-bold sm:w-24 w-12 px-2 md:px-8 a1">A1</button>
+                                <button class="btn text-gray-400 xl:text-xl text-base text-bold sm:w-24 w-12 px-2 md:px-8 a2">A2</button>
+                                <button class="btn text-gray-400 xl:text-xl text-base text-bold sm:w-24 w-12 xl:ms-24 md:ms-16 sm:ms-10 ms-0 px-2 md:px-8 a3">A3</button>
+                                <button class="btn text-gray-400 xl:text-xl text-base text-bold sm:w-24 w-12 px-2 md:px-8 a4">A4</button>
+                            </div>
+                            <div class="flex justify-between mb-5">
+                                <button class="p-3 text-gray-400 xl:text-xl text-base">B</button>
+                                <button class="btn text-gray-400 xl:text-xl text-base  text-bold sm:w-24 w-12 px-2 md:px-8 b1">B1</button>
+                                <button class="btn text-gray-400 xl:text-xl text-base  text-bold sm:w-24 w-12 px-2 md:px-8 b2">B2</button>
+                                <button class="btn text-gray-400 xl:text-xl text-base  text-bold sm:w-24 w-12 xl:ms-24 md:ms-16 sm:ms-10 ms-0 px-2 md:px-8 b3">B3</button>
+                                <button class="btn text-gray-400 xl:text-xl text-base  text-bold sm:w-24 w-12 px-2 md:px-8 b4">B4</button>
+                            </div>
+                            <div class="flex justify-between mb-5">
+                                <button class="p-3 text-gray-400 xl:text-xl text-base">C</button>
+                                <button class="btn text-gray-400 xl:text-xl text-base  text-bold sm:w-24 w-12 px-2 md:px-8 c1">C1</button>
+                                <button class="btn text-gray-400 xl:text-xl text-base  text-bold sm:w-24 w-12 px-2 md:px-8 c2">C2</button>
+                                <button class="btn text-gray-400 xl:text-xl text-base  text-bold sm:w-24 w-12 xl:ms-24 md:ms-16 sm:ms-10 ms-0 px-2 md:px-8 c3">C3</button>
+                                <button class="btn text-gray-400 xl:text-xl text-base  text-bold sm:w-24 w-12 px-2 md:px-8 c4">C4</button>
+                            </div>
+                            <div class="flex justify-between mb-5">
+                                <button class="p-3 text-gray-400 xl:text-xl text-base">D</button>
+                                <button class="btn text-gray-400 xl:text-xl text-base  text-bold sm:w-24 w-12 px-2 md:px-8 d1">D1</button>
+                                <button class="btn text-gray-400 xl:text-xl text-base  text-bold sm:w-24 w-12 px-2 md:px-8 d2">D2</button>
+                                <button class="btn text-gray-400 xl:text-xl text-base  text-bold sm:w-24 w-12 xl:ms-24 md:ms-16 sm:ms-10 ms-0 px-2 md:px-8 d3">D3</button>
+                                <button class="btn text-gray-400 xl:text-xl text-base  text-bold sm:w-24 w-12 px-2 md:px-8 d4">D4</button>
+                            </div>
+                            <div class="flex justify-between mb-5">
+                                <button class="p-3 text-gray-400 xl:text-xl text-base">E</button>
+                                <button class="btn text-gray-400 xl:text-xl text-base  text-bold sm:w-24 w-12 px-2 md:px-8 e1">E1</button>
+                                <button class="btn text-gray-400 xl:text-xl text-base  text-bold sm:w-24 w-12 px-2 md:px-8 e2">E2</button>
+                                <button class="btn text-gray-400 xl:text-xl text-base  text-bold sm:w-24 w-12 xl:ms-24 md:ms-16 sm:ms-10 ms-0 px-2 md:px-8 e3">E3</button>
+                                <button class="btn text-gray-400 xl:text-xl text-base  text-bold sm:w-24 w-12 px-2 md:px-8 e4">E4</button>
+                            </div>
+                            <div class="flex justify-between mb-5">
+                                <button class="p-3 text-gray-400 xl:text-xl text-base">F</button>
+                                <button class="btn text-gray-400 xl:text-xl text-base  text-bold sm:w-24 w-12 px-2 md:px-8 f1">F1</button>
+                                <button class="btn text-gray-400 xl:text-xl text-base  text-bold sm:w-24 w-12 px-2 md:px-8 f2">F2</button>
+                                <button class="btn text-gray-400 xl:text-xl text-base  text-bold sm:w-24 w-12 xl:ms-24 md:ms-16 sm:ms-10 ms-0 px-2 md:px-8 f3">F3</button>
+                                <button class="btn text-gray-400 xl:text-xl text-base  text-bold sm:w-24 w-12 px-2 md:px-8 f4">F4</button>
+                            </div>
+                            <div class="flex justify-between mb-5">
+                                <button class="p-3 text-gray-400 xl:text-xl text-base">G</button>
+                                <button class="btn text-gray-400 xl:text-xl text-base  text-bold sm:w-24 w-12 px-2 md:px-8 g1">g1</button>
+                                <button class="btn text-gray-400 xl:text-xl text-base  text-bold sm:w-24 w-12 px-2 md:px-8 g2">g2</button>
+                                <button class="btn text-gray-400 xl:text-xl text-base  text-bold sm:w-24 w-12 xl:ms-24 md:ms-16 sm:ms-10 ms-0 px-2 md:px-8 g3">g3</button>
+                                <button class="btn text-gray-400 xl:text-xl text-base  text-bold sm:w-24 w-12 px-2 md:px-8 g4">g4</button>
+                            </div>
+                            <div class="flex justify-between mb-5">
+                                <button class="p-3 text-gray-400 xl:text-xl text-base">H</button>
+                                <button class="btn text-gray-400 xl:text-xl text-base  text-bold sm:w-24 w-12 px-2 md:px-8 h1">H1</button>
+                                <button class="btn text-gray-400 xl:text-xl text-base  text-bold sm:w-24 w-12 px-2 md:px-8 h2">H2</button>
+                                <button class="btn text-gray-400 xl:text-xl text-base  text-bold sm:w-24 w-12 xl:ms-24 md:ms-16 sm:ms-10 ms-0 px-2 md:px-8 h3">H3</button>
+                                <button class="btn text-gray-400 xl:text-xl text-base  text-bold sm:w-24 w-12 px-2 md:px-8 h4">H4</button>
+                            </div>
+                            <div class="flex justify-between mb-5">
+                                <button class="p-3 text-gray-400 xl:text-xl text-base me-2">I</button>
+                                <button class="btn text-gray-400 xl:text-xl text-base  text-bold sm:w-24 w-12 px-2 md:px-8 i1">I1</button>
+                                <button class="btn text-gray-400 xl:text-xl text-base  text-bold sm:w-24 w-12 px-2 md:px-8 i2">I2</button>
+                                <button class="btn text-gray-400 xl:text-xl text-base  text-bold sm:w-24 w-12 xl:ms-24 md:ms-16 sm:ms-10 ms-0 px-2 md:px-8 i3">I3</button>
+                                <button class="btn text-gray-400 xl:text-xl text-base  text-bold sm:w-24 w-12 px-2 md:px-8 i4">I4</button>
+                            </div>
+                            <div class="flex justify-between mb-5">
+                                <button class="p-3 text-gray-400 xl:text-xl text-base">J</button>
+                                <button class="btn text-gray-400 xl:text-xl text-base  text-bold sm:w-24 w-12 px-2 md:px-8 j1">J1</button>
+                                <button class="btn text-gray-400 xl:text-xl text-base  text-bold sm:w-24 w-12 px-2 md:px-8 j2">J2</button>
+                                <button class="btn text-gray-400 xl:text-xl text-base  text-bold sm:w-24 w-12 xl:ms-24 md:ms-16 sm:ms-10 ms-0 px-2 md:px-8 j3">J3</button>
+                                <button class="btn text-gray-400 xl:text-xl text-base  text-bold sm:w-24 w-12 px-2 md:px-8 j4">J4</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="xl:border-s-2 border-dashed w-full border-zinc-300 xl:ms-10 sm:px-10">
+                        <div>
+                            <h3 class="text-xl font-bold mb-4">Select Your Seat</h3>
+                            <div class="flex justify-between items-center py-3 border-t-2 border-dashed  border-zinc-300"></div>
+                        </div>
+                        <div class="bg-[#F7F8F8]  rounded-xl p-5">
+                            <div class="overflow-x-auto">
+                                <table class="table md:text-xl">
+                                  <thead>
+                                    <tr>
+                                      <th class="font-extrabold text-black text-base md:text-xl">Seat <span class="bg-[#1DD100] p-1 rounded text-white">0</span></th>
+                                      <th class="font-extrabold text-black text-base md:text-xl">Class</th>
+                                      <th class="font-extrabold text-black text-base md:text-xl text-end">Price</th>
+                                    </tr>
+                                    <tr class="border-t-2 border-dashed  border-zinc-300"></tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr>
+                                      <td>C2</td>
+                                      <td>Economy</td>
+                                      <td class="text-end">500</td>
+                                    </tr>
+                                    <tr>
+                                      <td>C2</td>
+                                       <td>Economy</td>
+                                       <td class="text-end">500</td>
+                                    </tr>
+                                    <tr>
+                                       <td>C2</td>
+                                        <td>Economy</td>
+                                        <td class="text-end">500</td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                                <div class="border border-zinc-300 mb-5"></div>
+                                <div class="flex justify-between">
+                                    <h4 class="font-extrabold">Total Price</h4>
+                                    <h4 class="font-extrabold">BDT 400</h4>
+                                </div>
+                                <div class="relative my-5">
+                                    <input type="text" class="block w-full px-2 py-4 sm:p-4 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-5" placeholder="Have any coupon?" required />
+                                    <button type="submit" class="text-white absolute end-1 bottom-2.5 bg-[#1DD100] font-medium rounded-lg text-sm px-4 py-2">Apply</button>
+                                </div>
+                                <div class="flex justify-between mb-5">
+                                    <h4 class="font-extrabold">Grand Total</h4>
+                                    <h4 class="font-extrabold">BDT 400</h4>
+                                </div>
+                              </div>
+                        </div>
+                        <form class="my-5">
+                            <div class="mb-5">
+                                <label for="text" class="block mb-2 text-base font-bold text-gray-900 dark:text-white">Passenger Name*</label>
+                                <input type="text" id="text" class="bg-gray-50 border border-gray-300 text-gray-900 text-base rounded-lg block w-full p-4 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white" placeholder="Enter your name" required />
+                            </div>
+                            <div class="mb-5">
+                                <label for="number" class="block mb-2 text-base font-bold text-gray-900 dark:text-white">Phone Number*</label>
+                                <input type="number" id="number" class="bg-gray-50 border border-gray-300 text-gray-900 text-base rounded-lg block w-full p-4 dark:text-white" placeholder="Enter your phone number" required />
+                            </div>
+                            <div class="mb-5">
+                                <label for="email" class="block mb-2 text-base font-bold text-gray-900 dark:text-white">Email Id</label>
+                                <input type="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-base rounded-lg block w-full p-4 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white" placeholder="Enter your email Id" required />
+                            </div>
+                            <button type="submit" class="text-white bg-[#1DD100] font-medium rounded-lg text-base w-full p-4 text-center ">Submit</button>
+                        </form>
+                        <div class="flex justify-between">
+                            <p><a href="#" class="underline text-gray-400">Terms and Conditions</a></p>
+                            <p><a href="#" class="underline text-gray-400">Cancellation Policy</a></p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>

@@ -6,9 +6,119 @@
     <title>Smart Ticketing</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Here is style.css -->
+    <link rel="stylesheet" href="src/css/style.css">
 </head>
 <body>
-    
+    <!-- _________Here is Header Section____________ -->
+    <header class="container mx-auto">
+        <!-- Here is navbar -->
+        <section>
+            <div class="navbar py-5 md:py-12 px-0 bg-base-100">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                    </div>
+                    <ul tabindex="0" class="menu font-medium menu-sm bg-white w-52 dropdown-content mt-3 z-[1] p-2 rounded-box">
+                        <li><a class="text-base">Home</a></li>
+                        <li><a class="text-base">About</a></li>
+                        <li><a class="text-base">Destination</a></li>
+                        <li><a class="text-base">Search</a></li>
+                    </ul>
+                    </div>
+                    <a href="#" class="text-2xl md:text-4xl font-extrabold">Online Ticket</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1 font-medium">
+                        <li><a class="text-base">Home</a></li>
+                        <li><a class="text-base">About</a></li>
+                        <li><a class="text-base">Destination</a></li>
+                        <li><a class="text-base">Search</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end gap-12">
+                    <div class="navbar-end w-auto">
+                        <a class="btn btn-md text-xl font-bold text-btn-color bg-[#1DD1001A] text-green-500">Bus 
+                            <img src="src/img/bus-icon.png">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Here is Banner Section -->
+        <section>
+            <div class="hero rounded-3xl pt-24 pb-28 bg-[url(src/img/banner.png)] bg-no-repeat bg-center">
+                <div class="hero-content text-center text-white">
+                    <div class="">
+                        <h1 class="mb-5 text-6xl font-extrabold">End-To-End Travel With</h1>
+                        <h1 class="mb-5 text-6xl font-extrabold text-[#1DD100]">Alpha Express</h1>
+                        <p class="mb-8 w-8/12 mx-auto">The journey typically begins at a bus terminal or station, bustling with activity as travelers gather to embark on their respective routes. </p>
+                        <button class="btn bg-[#1DD100] font-bold text-xl border-none">Buy Tickets</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+    <!-- _________Here is End Header Section________ -->
+    <!-- _________Here is Main Section____________ -->
+    <main>
+        <!-- Best offers for you -->
+        <section class="py-24 container mx-auto">
+            <div>
+                <h2 class="text-5xl font-bold text-center mb-16">Best offers for you</h2>
+            </div>
+            <div class="flex flex-col md:flex-row gap-10">
+                <div class="bg-[#FFBF0F] flex rounded-2xl w-10/12 mx-auto px-5">
+                    <div class="w-full flex justify-center items-center flex-col">
+                        <div>
+                            <h2 class="text-4xl font-black">15% OFF</h2>
+                            <p class="font-bold py-2 ">on your next purchase</p>
+                            <p class="text-slate-700">use by January 2024</p>
+                        </div>
+                    </div>
+                    <img src="src/img/cupon-devider.png">
+                    <div class="w-full flex justify-center items-center flex-col">
+                        <div>
+                            <h3 class="text-2xl font-bold">NEW15</h3>
+                            <p class="text-slate-700">Coupon Code</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-[#F78C9C] flex rounded-2xl w-10/12 mx-auto px-5">
+                    <div class="w-full flex justify-center items-center flex-col">
+                        <div>
+                            <h2 class="text-4xl font-black">20% OFF</h2>
+                            <p class="font-bold py-2 ">on your next purchase</p>
+                            <p class="text-slate-700">use by January 2024</p>
+                        </div>
+                    </div>
+                    <img src="src/img/cupon-devider.png">
+                    <div class="w-full flex justify-center items-center flex-col">
+                        <div>
+                            <h3 class="text-2xl font-bold">Couple 20</h3>
+                            <p class="text-slate-700">Coupon Code</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-16">
+                <button class="btn btn-outline btn-lg btn-success text-[#1DD100] font-bold">See All Offers</button>
+            </div>
+        </section>
+        <!-- Alpha Express section -->
+        <section class="border-t-2 rounded-3xl border-[#1DD100] py-24">
+            <div>
+                <h2 class="text-5xl font-bold text-center mb-16">Alpha Express</h2>
+            </div>
+        </section>
+    </main>
+    <!-- _________Here is End Main Section________ -->
+    <!-- _________Here is Footer Section__________ -->
+    <footer class="container mx-auto">
+
+    </footer>
+    <!-- _________Here is End Footer Section__________ -->
 
 
     <!-- custom js link -->

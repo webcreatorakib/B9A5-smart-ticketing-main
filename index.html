@@ -10,20 +10,28 @@
     <link rel="stylesheet" href="src/css/style.css">
 </head>
 <body>
+    <!-- _______________Modal_____________ -->
     <!-- success alert -->
-    <section class="hidden bg-[#F7F8F8] flex justify-center items-center p-20 px-auto w-full min-h-screen">
-        <div class="flex flex-col items-center text-center w-4/12 rounded-xl p-10 justify-center bg-[white]">
+    <section id="success" class="hidden bg-[#cecece] flex justify-center items-center p-20 w-full min-h-screen">
+        <div class="flex mx-auto flex-col items-center  text-center w-4/12 rounded-xl p-10 justify-center bg-[white]">
             <img src="src/img/success.png">
             <h2 class="my-5 text-[#1DD100] font-bold text-xl">SUCCESS</h2>
             <h3 class="font-extrabold">Thank you for Booking Our Bus Seats. 
                 We are working hard to find the best service and deals for you.</h3>
             <p class="my-4">Shortly you will find a confirmation in your email.</p>
-            <button class="btn rounded-full bg-[#27AE60] text-white px-8 text-xl">Continue</button>
+            <button class="btn rounded-full bg-[#27AE60] text-white px-8 text-xl continue">Continue</button>
         </div>
     </section>
-
+    <!-- More then 4 button -->
+    <section id="more4" class="hidden bg-[#cecece] flex justify-center items-center p-20 w-full min-h-screen">
+        <div class="flex mx-auto flex-col items-center  text-center w-4/12 rounded-xl p-10 justify-center bg-[white]">
+            <h2 class="my-5 text-[#1DD100] font-bold text-xl">চারটি টিকেটের বেশি আপনি ক্রয় করতে পারবেন না। পূর্বের অবস্থায় ফিরে যাওয়ার জন্য continue তে ক্লিক করুন। ধন্যবাদ।</h2>
+            <button class="btn rounded-full bg-[#27AE60] text-white px-8 text-xl continue">Continue</button>
+        </div>
+    </section>
+    <!-- _____________________Modal End_______________ -->
     <!-- _________Here is Header Section____________ -->
-    <header class="container mx-auto">
+    <header class="container mx-auto" id="header">
         <!-- Here is navbar -->
         <section>
             <div class="navbar py-5 px-4 md:py-12 sm:px-0 bg-base-100">
@@ -74,7 +82,7 @@
     </header>
     <!-- _________Here is End Header Section________ -->
     <!-- _________Here is Main Section____________ -->
-    <main class="">
+    <main id="main">
         <!-- Best offers for you -->
         <section class="py-16 md:py-24 container mx-auto">
             <div>
@@ -287,15 +295,15 @@
                                   </tbody>
                                 </table>
                                 <div class="border border-zinc-300 mb-5"></div>
-                                <div class="flex justify-between">
+                                <div class="flex justify-between mb-5">
                                     <h4 class="font-extrabold">Total Price</h4>
                                     <h4 class="font-extrabold text-xl">BDT <span class="totalPrice">00</span></h4>
                                 </div>
-                                <div class="relative my-5">
+                                <div class="relative couponContainer">
                                     <input type="text" class="block w-full px-2 py-4 sm:p-4 text-base text-gray-900 border border-gray-300 rounded-lg bg-gray-5 coupon" placeholder="Have any coupon?" disabled required />
                                     <button type="submit" class="text-white absolute end-1 bottom-2.5 bg-[#92e086] font-medium rounded-lg text-base px-4 py-2 apply" disabled>Apply</button>
                                 </div>
-                                <div class="flex justify-between mb-5">
+                                <div class="flex justify-between my-5">
                                     <h4 class="font-extrabold">Grand Total</h4>
                                     <h4 class="font-extrabold text-xl">BDT <span class="discountPrice">00</span></h4>
                                 </div>
@@ -314,7 +322,7 @@
                                 <label for="email" class="block mb-2 text-base font-bold text-gray-900 dark:text-white">Email Id</label>
                                 <input type="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-base rounded-lg block w-full p-4 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white" placeholder="Enter your email Id" required />
                             </div>
-                            <button type="submit" class="text-white bg-[#1DD100] font-medium rounded-lg text-base w-full p-4 text-center ">Submit</button>
+                            <button type="submit" class="text-white bg-[#92e086] font-medium rounded-lg text-base w-full p-4 text-center submit" disabled>Submit</button>
                         </form>
                         <div class="flex justify-between">
                             <p><a href="#" class="underline text-gray-400">Terms and Conditions</a></p>
@@ -327,7 +335,7 @@
     </main>
     <!-- _________Here is End Main Section________ --> 
     <!-- _________Here is Footer Section__________ -->
-    <footer class="bg-black text-white">
+    <footer class="bg-black text-white" id="footer">
         <div class="container mx-auto py-10 md:py-24">
             <div class="flex flex-col md:flex-row justify-between w-full md:p-0 p-5">
                 <div>

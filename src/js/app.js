@@ -21,6 +21,10 @@ const discountPrice = document.querySelector('.discountPrice');
 //Coupon Code
 const coupon1 = document.querySelector('.coupon1').innerText;
 const coupon2 = document.querySelector('.coupon2').innerText;
+const couponContainer = document.querySelector('.couponContainer');
+//submit
+const submit = document.querySelector('.submit');
+const inputNumber = document.getElementById('number');
 for(let seat of seats){
     seat.addEventListener('click',function(event){
         totalSeatNumber = totalSeatNumber - 1;
@@ -58,18 +62,52 @@ for(let seat of seats){
             totalPrice.innerHTML = ticketPriceCounter;
             discountPrice.innerHTML = ticketPriceCounter;
         };
+        //Button click and enable submit button
+        inputNumber.addEventListener('keypress', function(event){
+            const eventValue = event.target.value
+            if(eventValue != ' '){
+                submit.removeAttribute('disabled');
+                submit.style.background = '#1DD100';
+            }
+        });
     });
 };
+
+
 //Coupon validation;
 applyBtn.addEventListener('click', function(){
     const couponText = coupon.value;
     if(coupon1 === couponText && couponText != ''){
         const discount = ticketPriceCounter * 15 / 100;
         discountPrice.innerHTML =ticketPriceCounter - discount;
+        couponContainer.style.display = 'none';
     }else if(coupon2 === couponText){
         const discount = ticketPriceCounter * 20 / 100;
         discountPrice.innerHTML =ticketPriceCounter - discount;
+        couponContainer.style.display = 'none';
     }else{
         alert('please input valid coupon')
     }
+});
+
+
+//Submit
+const success = document.getElementById('success')
+const footer = document.getElementById('footer');
+const header = document.getElementById('header');
+const main = document.getElementById('main');
+submit.addEventListener('click', function(){
+    footer.style.display = 'none';
+    header.style.display = 'none';
+    main.style.display = 'none';
+    success.style.display = 'block';
+});
+
+//continue
+const continueBtn = document.querySelector('.continue');
+continueBtn.addEventListener('click',function(){
+    footer.style.display = 'block';
+    header.style.display = 'block';
+    main.style.display = 'block';
+    success.style.display = 'none';
 })

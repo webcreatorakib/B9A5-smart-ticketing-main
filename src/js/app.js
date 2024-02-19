@@ -110,4 +110,4 @@ continueBtn.addEventListener('click',function(){
     header.style.display = 'block';
     main.style.display = 'block';
     success.style.display = 'none';
-})
+});

@@ -18,6 +18,7 @@ const tbody = document.querySelector('.tbody');
 const totalPrice = document.querySelector('.totalPrice');
 //Total price after discount;
 const discountPrice = document.querySelector('.discountPrice');
+const showDiscount = document.querySelector('.showDiscount');
 //Coupon Code
 const coupon1 = document.querySelector('.coupon1').innerText;
 const coupon2 = document.querySelector('.coupon2').innerText;
@@ -92,10 +93,18 @@ applyBtn.addEventListener('click', function(){
     const couponText = coupon.value;
     if(coupon1 === couponText && couponText != ''){
         const discount = ticketPriceCounter * 15 / 100;
+        const createDiscount = document.createElement('div');
+        createDiscount.innerHTML = `<div class="flex justify-between"><h4 class="font-extrabold inline-block me-auto">Discount Money</h4>
+        <h4 class="font-extrabold inline-block text-xl">BDT ${discount}</h4></div>`;
+        showDiscount.appendChild(createDiscount);
         discountPrice.innerHTML =ticketPriceCounter - discount;
         couponContainer.style.display = 'none';
     }else if(coupon2 === couponText){
         const discount = ticketPriceCounter * 20 / 100;
+        const createDiscount = document.createElement('div');
+        createDiscount.innerHTML = `<div class="flex justify-between"><h4 class="font-extrabold inline-block me-auto">Discount Money</h4>
+        <h4 class="font-extrabold inline-block text-xl">BDT ${discount}</h4></div>`;
+        showDiscount.appendChild(createDiscount);
         discountPrice.innerHTML =ticketPriceCounter - discount;
         couponContainer.style.display = 'none';
     }else{

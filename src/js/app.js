@@ -25,6 +25,10 @@ const couponContainer = document.querySelector('.couponContainer');
 //submit
 const submit = document.querySelector('.submit');
 const inputNumber = document.getElementById('number');
+//For click more then 4 seat;
+const moreSeat = document.getElementById('moreSeat');
+//For wrong code
+const wrongCode = document.getElementById('wrongCode');
 for(let seat of seats){
     seat.addEventListener('click',function(event){
         totalSeatNumber = totalSeatNumber - 1;
@@ -37,7 +41,10 @@ for(let seat of seats){
         }
         // Not Allow More 4 Seats, button background, total counting seat,
         if(bookingSeatAdd > 4 || totalSeatNumber < 0){
-            alert("Not allow more 4")
+            moreSeat.style.display = 'block';
+            footer.style.display = 'none';
+            header.style.display = 'none';
+            main.style.display = 'none';
         }else{
             bookingSeat.innerHTML = bookingSeatAdd;
             seatNumber.innerText = totalSeatNumber;
@@ -72,8 +79,14 @@ for(let seat of seats){
         });
     });
 };
-
-
+//For click more then 4 seat after continue;
+const moreSeatContinue = document.querySelector('.moreSeatContinue');
+moreSeatContinue.addEventListener('click', function(){
+    moreSeat.style.display = 'none';
+    footer.style.display = 'block';
+    header.style.display = 'block';
+    main.style.display = 'block';
+}) 
 //Coupon validation;
 applyBtn.addEventListener('click', function(){
     const couponText = coupon.value;
@@ -86,7 +99,10 @@ applyBtn.addEventListener('click', function(){
         discountPrice.innerHTML =ticketPriceCounter - discount;
         couponContainer.style.display = 'none';
     }else{
-        alert('please input valid coupon')
+        wrongCode.style.display = 'block';
+        footer.style.display = 'none';
+        header.style.display = 'none';
+        main.style.display = 'none';
     }
 });
 
@@ -111,3 +127,12 @@ continueBtn.addEventListener('click',function(){
     main.style.display = 'block';
     success.style.display = 'none';
 });
+
+//for wrong coupon
+const tryAgain = document.querySelector('.tryAgain');
+tryAgain.addEventListener('click',function(){
+    wrongCode.style.display = 'none';
+    footer.style.display = 'block';
+    header.style.display = 'block';
+    main.style.display = 'block';
+})
